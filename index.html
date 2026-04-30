@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Ayush Jha — Premium Digital Marketing, Web Design & Video Editing Specialist | Google Ads, Meta Ads, WordPress | Ghaziabad, India"/>
+<title>Ayush Jha — Digital Marketing & Web Design</title>
+
+<!-- Fonts: Cormorant Garamond (luxury display) + Syne (modern body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div class="preloader" id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-logo">AJ<span>.</span></div>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+  </div>
+</div>
+
+<!-- NOISE OVERLAY -->
+<div class="noise-overlay"></div>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower">
+  <span class="cursor-text" id="cursorText"></span>
+</div>
+
+<!-- ANIMATED BACKGROUND -->
+<div class="bg-scene">
+  <div class="bg-grid"></div>
+  <div class="bg-gradient-radial"></div>
+  <div class="particles" id="particles"></div>
+</div>
+
+<!-- ORBS -->
+<div class="orb-container">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+
+<!-- NAVIGATION -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#hero" class="logo" data-cursor="view">
+      <span class="logo-text">AJ</span><span class="logo-dot">.</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#results" class="nav-link">Results</a></li>
+      <li><a href="#contact" class="nav-cta">
+        <span>Hire Me</span>
+        <i class="fas fa-arrow-right"></i>
+      </a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="status-dot"></div>
+      <span class="mono">Available for new projects</span>
+    </div>
+    <h1 class="hero-title">
+      <span class="title-line">I Build <em>High-Converting</em></span>
+      <span class="title-line">Websites &amp; Run</span>
+      <span class="title-line"><em>Profitable Ads</em></span>
+    </h1>
+    <p class="hero-subtitle">
+      Digital Marketing, Web Development, and Design specialist crafting premium online experiences that generate real leads, real sales, and real growth for businesses.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary magnetic" data-cursor="view">
+        <span>View My Work</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+      <a href="https://wa.me/919899931051" class="btn btn-ghost magnetic" data-cursor="view" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp Me</span>
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="stat-number">
+          <span class="counter" data-target="400">0</span>+
+        </div>
+        <div class="stat-label">Leads / Day</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="hero-stat">
+        <div class="stat-number">₹25–₹35</div>
+        <div class="stat-label">Cost Per Lead</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="hero-stat">
+        <div class="stat-number">₹15L+</div>
+        <div class="stat-label">Ad Spend Managed</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="hero-stat">
+        <div class="stat-number">
+          <span class="counter" data-target="8">0</span>x
+        </div>
+        <div class="stat-label">Avg. ROAS</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-card-float" aria-hidden="true">
+    <div class="float-card fc-1">
+      <div class="fc-icon"><i class="fab fa-google"></i></div>
+      <div class="fc-content">
+        <div class="fc-label">Google Ads ROAS</div>
+        <div class="fc-value">8.5x</div>
+      </div>
+      <div class="fc-badge up"><i class="fas fa-arrow-up"></i> 42%</div>
+    </div>
+    <div class="float-card fc-2">
+      <div class="fc-icon meta"><i class="fab fa-meta"></i></div>
+      <div class="fc-content">
+        <div class="fc-label">Leads Generated</div>
+        <div class="fc-value">1,200+</div>
+      </div>
+      <div class="fc-badge up"><i class="fas fa-arrow-up"></i> Monthly</div>
+    </div>
+    <div class="float-card fc-3">
+      <div class="fc-icon web"><i class="fas fa-code"></i></div>
+      <div class="fc-content">
+        <div class="fc-label">Sites Delivered</div>
+        <div class="fc-value">50+</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    <span class="mono">Scroll to explore</span>
+  </div>
+</section>
+
+<!-- MARQUEE TICKER -->
+<div class="marquee-section">
+  <div class="marquee-track">
+    <div class="marquee-inner">
+      <span>Google Ads</span><span class="sep">✦</span>
+      <span>Meta Ads</span><span class="sep">✦</span>
+      <span>WordPress</span><span class="sep">✦</span>
+      <span>UI/UX Design</span><span class="sep">✦</span>
+      <span>Video Editing</span><span class="sep">✦</span>
+      <span>Web Development</span><span class="sep">✦</span>
+      <span>Lead Generation</span><span class="sep">✦</span>
+      <span>SEO Strategy</span><span class="sep">✦</span>
+      <span>Canva & Photoshop</span><span class="sep">✦</span>
+      <span>Campaign Optimization</span><span class="sep">✦</span>
+      <span>Figma</span><span class="sep">✦</span>
+      <span>Google Analytics</span><span class="sep">✦</span>
+      <!-- Duplicate -->
+      <span>Google Ads</span><span class="sep">✦</span>
+      <span>Meta Ads</span><span class="sep">✦</span>
+      <span>WordPress</span><span class="sep">✦</span>
+      <span>UI/UX Design</span><span class="sep">✦</span>
+      <span>Video Editing</span><span class="sep">✦</span>
+      <span>Web Development</span><span class="sep">✦</span>
+      <span>Lead Generation</span><span class="sep">✦</span>
+      <span>SEO Strategy</span><span class="sep">✦</span>
+      <span>Canva & Photoshop</span><span class="sep">✦</span>
+      <span>Campaign Optimization</span><span class="sep">✦</span>
+      <span>Figma</span><span class="sep">✦</span>
+      <span>Google Analytics</span><span class="sep">✦</span>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT SECTION -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-left">
+        <div class="section-eyebrow gsap-reveal">
+          <span class="mono">About Me</span>
+          <div class="eyebrow-line"></div>
+        </div>
+        <h2 class="section-title gsap-reveal">
+          Versatile Digital <br><em>Specialist</em> from <br>Ghaziabad
+        </h2>
+        <p class="about-text gsap-reveal">
+          I'm <strong>Ayush Jha</strong>, a highly motivated professional with hands-on experience in web development, graphic design, video editing, and digital marketing. I've successfully managed full-time roles at companies like Goldberry LLC and Lucifer Media Labs while showcasing strong time management and adaptability.
+        </p>
+        <p class="about-text gsap-reveal">
+          Skilled in <strong>Google/Meta Ads, WordPress, Figma, HTML/CSS, and Adobe Premiere Pro</strong>—I blend technical development with performance marketing to deliver results that actually move the needle for dynamic organizations.
+        </p>
+        <div class="about-cta gsap-reveal">
+          <a href="#contact" class="btn btn-primary magnetic">
+            <span>Let's Work Together</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="https://wa.me/919899931051" class="about-whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span>+91 98999 31051</span>
+          </a>
+        </div>
+      </div>
+      <div class="about-right gsap-reveal">
+        <div class="about-card-grid">
+          <div class="about-info-card">
+            <div class="aic-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="aic-content">
+              <div class="aic-label">Location</div>
+              <div class="aic-value">Ghaziabad, UP, India</div>
+            </div>
+          </div>
+          <div class="about-info-card">
+            <div class="aic-icon"><i class="fas fa-briefcase"></i></div>
+            <div class="aic-content">
+              <div class="aic-label">Experience</div>
+              <div class="aic-value">3+ Years Professional</div>
+            </div>
+          </div>
+          <div class="about-info-card">
+            <div class="aic-icon"><i class="fas fa-bullseye"></i></div>
+            <div class="aic-content">
+              <div class="aic-label">Specialization</div>
+              <div class="aic-value">Ads + Web + Video</div>
+            </div>
+          </div>
+          <div class="about-info-card">
+            <div class="aic-icon"><i class="fas fa-envelope"></i></div>
+            <div class="aic-content">
+              <div class="aic-label">Email</div>
+              <div class="aic-value">aj1004890@gmail.com</div>
+            </div>
+          </div>
+          <div class="about-achievement-card">
+            <div class="aac-header">
+              <div class="aac-icon"><i class="fas fa-chart-line"></i></div>
+              <span class="aac-label">Key Achievement</span>
+            </div>
+            <div class="aac-stat">20–30</div>
+            <div class="aac-desc">Qualified leads generated per month through targeted Google & Meta Ad campaigns</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-header gsap-reveal">
+      <div class="section-eyebrow">
+        <span class="mono">What I Offer</span>
+        <div class="eyebrow-line"></div>
+      </div>
+      <h2 class="section-title">Premium <em>Services</em></h2>
+      <p class="section-desc">End-to-end digital solutions that drive real business growth</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card gsap-card" data-tilt>
+        <div class="sc-number mono">01</div>
+        <div class="sc-icon"><i class="fab fa-google"></i></div>
+        <h3>Google Ads</h3>
+        <p>Data-driven search & display campaigns that put your brand in front of high-intent buyers at exactly the right moment.</p>
+        <ul class="sc-list">
+          <li>Search & Display Campaigns</li>
+          <li>Keyword Strategy & Optimization</li>
+          <li>A/B Creative Testing</li>
+          <li>ROI Tracking & Reporting</li>
+        </ul>
+        <button class="sc-link open-service-modal" data-service="google-ads">Explore Service <i class="fas fa-arrow-right"></i></button>
+        <div class="sc-glow"></div>
+      </div>
+
+      <div class="service-card gsap-card" data-tilt>
+        <div class="sc-number mono">02</div>
+        <div class="sc-icon meta"><i class="fab fa-meta"></i></div>
+        <h3>Meta Ads</h3>
+        <p>Scale your business with strategic Facebook & Instagram advertising that converts cold audiences into loyal customers.</p>
+        <ul class="sc-list">
+          <li>Audience Targeting & Segmentation</li>
+          <li>Creative Design & Ad Copy</li>
+          <li>Retargeting Funnels</li>
+          <li>CPC Reduction Strategy</li>
+        </ul>
+        <button class="sc-link open-service-modal" data-service="meta-ads">Explore Service <i class="fas fa-arrow-right"></i></button>
+        <div class="sc-glow"></div>
+      </div>
+
+      <div class="service-card gsap-card" data-tilt>
+        <div class="sc-number mono">03</div>
+        <div class="sc-icon web"><i class="fas fa-code"></i></div>
+        <h3>Website Development</h3>
+        <p>Lightning-fast, mobile-first websites built with HTML, PHP, and WordPress, optimized for user experience and conversions.</p>
+        <ul class="sc-list">
+          <li>HTML, CSS, PHP & WP</li>
+          <li>Mobile-First Responsive UI/UX</li>
+          <li>SEO Optimized Structure</li>
+          <li>Corporate & Service Sites</li>
+        </ul>
+        <button class="sc-link open-service-modal" data-service="web-dev">Explore Service <i class="fas fa-arrow-right"></i></button>
+        <div class="sc-glow"></div>
+      </div>
+
+      <div class="service-card gsap-card" data-tilt>
+        <div class="sc-number mono">04</div>
+        <div class="sc-icon design"><i class="fas fa-palette"></i></div>
+        <h3>Graphic & Video Design</h3>
+        <p>Eye-catching UI, social media creatives, and edited promotional videos that stop the scroll and drive engagement.</p>
+        <ul class="sc-list">
+          <li>Adobe Premiere Pro Editing</li>
+          <li>Figma UI/UX & Packaging</li>
+          <li>Photoshop & Canva Visuals</li>
+          <li>Brand Visual Identity</li>
+        </ul>
+        <button class="sc-link open-service-modal" data-service="design">Explore Service <i class="fas fa-arrow-right"></i></button>
+        <div class="sc-glow"></div>
+      </div>
+
+      <div class="service-card gsap-card" data-tilt>
+        <div class="sc-number mono">05</div>
+        <div class="sc-icon lp"><i class="fas fa-rocket"></i></div>
+        <h3>Landing Pages</h3>
+        <p>High-converting landing pages with persuasive copy and strategic layouts designed to maximize lead form submissions.</p>
+        <ul class="sc-list">
+          <li>Conversion-Focused Layout</li>
+          <li>A/B Testing Ready</li>
+          <li>Fast Load Speed</li>
+          <li>Lead Capture Optimization</li>
+        </ul>
+        <button class="sc-link open-service-modal" data-service="landing-pages">Explore Service <i class="fas fa-arrow-right"></i></button>
+        <div class="sc-glow"></div>
+      </div>
+
+      <div class="service-card gsap-card service-card--cta" data-tilt>
+        <div class="sc-cta-inner">
+          <div class="sc-cta-icon"><i class="fas fa-handshake"></i></div>
+          <h3>Ready to Grow?</h3>
+          <p>Let's build something that converts visitors into customers and scales your revenue.</p>
+          <a href="#contact" class="btn btn-primary">
+            <i class="fab fa-whatsapp"></i>
+            <span>Start a Project</span>
+          </a>
+        </div>
+        <div class="sc-glow"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <div class="container">
+    <div class="section-header gsap-reveal">
+      <div class="section-eyebrow">
+        <span class="mono">Recent Work</span>
+        <div class="eyebrow-line"></div>
+      </div>
+      <h2 class="section-title">Featured <em>Projects</em></h2>
+      <p class="section-desc">Real strategies. Real results. Real impact.</p>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card project-card--large gsap-card" data-tilt>
+        <div class="pc-image">
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&q=80" alt="Electronics Business Branding" loading="lazy">
+          <div class="pc-overlay"></div>
+          <div class="pc-tags">
+            <span>Branding</span><span>Google Ads</span><span>Meta Ads</span>
+          </div>
+        </div>
+        <div class="pc-content">
+          <div class="pc-category mono">Ad Campaign + Branding</div>
+          <h3>Local Electronics Business</h3>
+          <p>Designed complete branding & promotional creatives and managed multi-platform ad campaigns to attract more customers both online and offline.</p>
+          <div class="pc-role"><i class="fas fa-user-tie"></i> Role: Campaign Manager & Creative Designer</div>
+          <div class="pc-result">
+            <i class="fas fa-chart-line"></i>
+            <span>20–30 new leads monthly via targeted Google & Meta Ads</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card gsap-card" data-tilt>
+        <div class="pc-image">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="Service Business Website" loading="lazy">
+          <div class="pc-overlay"></div>
+          <div class="pc-tags">
+            <span>WordPress</span><span>UI/UX</span><span>PHP</span>
+          </div>
+        </div>
+        <div class="pc-content">
+          <div class="pc-category mono">Web Development</div>
+          <h3>Corporate Web Solutions</h3>
+          <p>Built responsive, user-friendly websites with service pages, dynamic PHP functions, and full mobile optimization across platforms.</p>
+          <div class="pc-role"><i class="fas fa-user-tie"></i> Role: Web Developer & Designer</div>
+          <div class="pc-result">
+            <i class="fas fa-check-circle"></i>
+            <span>Smooth mobile experience & improved online visibility</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card gsap-card" data-tilt>
+        <div class="pc-image">
+          <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=800&q=80" alt="Social Media Campaign" loading="lazy">
+          <div class="pc-overlay"></div>
+          <div class="pc-tags">
+            <span>Premiere Pro</span><span>Social Media</span>
+          </div>
+        </div>
+        <div class="pc-content">
+          <div class="pc-category mono">Creative Media</div>
+          <h3>Promotional Video & Ads</h3>
+          <p>Edited promotional videos, ads, and reels to improve campaign engagement significantly during festive marketing pushes.</p>
+          <div class="pc-role"><i class="fas fa-user-tie"></i> Role: Video Editor & Graphic Designer</div>
+          <div class="pc-result">
+            <i class="fas fa-chart-line"></i>
+            <span>Increased social engagement & brand consistency</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card gsap-card" data-tilt>
+        <div class="pc-image">
+          <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80" alt="Product Packaging" loading="lazy">
+          <div class="pc-overlay"></div>
+          <div class="pc-tags">
+            <span>Figma</span><span>Photoshop</span><span>Design</span>
+          </div>
+        </div>
+        <div class="pc-content">
+          <div class="pc-category mono">Product Design</div>
+          <h3>Product Packaging & UI</h3>
+          <p>Designed product packaging and digital product experiences aligning with brand goals to boost sales and user interactions.</p>
+          <div class="pc-role"><i class="fas fa-user-tie"></i> Role: Graphic & Product Designer</div>
+          <div class="pc-result">
+            <i class="fas fa-star"></i>
+            <span>Enhanced customer engagement and brand value</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- IN-DEPTH CASE STUDIES -->
+<section class="case-study" id="case-study">
+  <div class="container">
+    <div class="section-header gsap-reveal">
+      <div class="section-eyebrow">
+        <span class="mono">Proven Track Record</span>
+        <div class="eyebrow-line"></div>
+      </div>
+      <h2 class="section-title">In-Depth <em>Case Studies</em></h2>
+      <p class="section-desc">Real campaigns, real data, and the exact strategies used to achieve them.</p>
+    </div>
+
+    <!-- CASE STUDY 1 -->
+    <div class="cs-card gsap-card" data-tilt>
+      <div class="cs-card-inner">
+        <div class="cs-header">
+          <div class="cs-title-wrap">
+            <span class="mono cs-subtitle">💼 CASE STUDY 1 (HIGH-CONVERSION)</span>
+            <h3>Lead Generation – Electronics Industry</h3>
+          </div>
+          <div class="cs-badges">
+            <span><i class="fab fa-google"></i> Google Ads (Search)</span>
+            <span><i class="fas fa-wallet"></i> ₹10,00,000 Spend</span>
+            <span><i class="fas fa-calendar-alt"></i> ₹5K-10K Daily</span>
+          </div>
+        </div>
+
+        <div class="cs-metrics-grid">
+          <div class="cs-metric">
+            <h4>350–400</h4>
+            <p>Leads / Day (Peak)</p>
+          </div>
+          <div class="cs-metric">
+            <h4>₹25–₹35</h4>
+            <p>Cost Per Lead (CPL)</p>
+          </div>
+          <div class="cs-metric">
+            <h4>7.8%</h4>
+            <p>Max Conversion Rate</p>
+          </div>
+          <div class="cs-metric">
+            <h4>14.5K+</h4>
+            <p>Daily Impressions</p>
+          </div>
+        </div>
+
+        <div class="cs-content-split">
+          <div class="cs-text">
+            <div class="cs-block">
+              <h4><i class="fas fa-bullseye"></i> Objective</h4>
+              <p>Generate high-quality leads for electronics product inquiries at a scalable and cost-efficient level.</p>
+            </div>
+            
+            <div class="cs-block">
+              <h4><i class="fas fa-cogs"></i> Strategy & Execution</h4>
+              <ul class="cs-list">
+                <li>Focused on high-intent keywords (buy + product-based searches).</li>
+                <li>Structured campaigns by product categories for better control.</li>
+                <li>Used conversion-focused ad copies with strong CTAs.</li>
+                <li>Optimized landing pages for lead capture (forms + quick response).</li>
+                <li>Applied continuous A/B testing (ads, keywords, bids).</li>
+                <li>Removed waste traffic using negative keywords.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Clickable Dashboard Images -->
+          <div class="cs-visuals">
+            <div class="cs-img-wrap design-item" data-img="images/electronics-dashboard.jpg">
+              <img src="images/electronics-dashboard.jpg" alt="Google Ads Dashboard Electronics">
+              <div class="cs-img-overlay"><i class="fas fa-expand"></i> View Dashboard</div>
+            </div>
+            <div class="cs-img-wrap design-item" data-img="images/electronics-report.jpg">
+              <img src="images/electronics-report.jpg" alt="Campaign Report Electronics">
+              <div class="cs-img-overlay"><i class="fas fa-expand"></i> View Report</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-footer">
+          <div class="cs-footer-col">
+            <h4><i class="fas fa-trophy"></i> Key Achievements</h4>
+            <p>Achieved low CPL in a highly competitive market, scaled campaigns while maintaining consistent lead quality, built a predictable acquisition system, and improved conversion rates via landing page optimizations.</p>
+          </div>
+          <div class="cs-footer-col">
+            <h4><i class="fas fa-lightbulb"></i> Optimization Insights</h4>
+            <p>High-intent keywords drove maximum conversions. Ad copy injecting pricing & urgency improved CTR dramatically. Regular bid adjustments were crucial to maintaining the low ₹25-₹35 CPL.</p>
+          </div>
+        </div>
+        
+        <div class="cs-summary">
+          <strong>🏆 Result:</strong> Generated consistent high-volume leads at a low cost, creating a scalable and profitable acquisition system.
+        </div>
+      </div>
+    </div>
+
+    <!-- CASE STUDY 2 -->
+    <div class="cs-card gsap-card" data-tilt style="margin-top: 60px;">
+      <div class="cs-card-inner">
+        <div class="cs-header">
+          <div class="cs-title-wrap">
+            <span class="mono cs-subtitle">💼 CASE STUDY 2 (HIGH-TRAFFIC)</span>
+            <h3>Website Traffic – RK Enterprise (Clothing)</h3>
+          </div>
+          <div class="cs-badges">
+            <span><i class="fab fa-google"></i> Google Ads (Search)</span>
+            <span><i class="fas fa-wallet"></i> ₹15,00,000 Spend</span>
+            <span><i class="fas fa-hourglass-half"></i> 10 Months</span>
+          </div>
+        </div>
+
+        <div class="cs-metrics-grid">
+          <div class="cs-metric">
+            <h4>2.6L+</h4>
+            <p>Total Clicks</p>
+          </div>
+          <div class="cs-metric">
+            <h4>20L+</h4>
+            <p>Total Impressions</p>
+          </div>
+          <div class="cs-metric">
+            <h4>₹5.60</h4>
+            <p>Avg. CPC</p>
+          </div>
+          <div class="cs-metric">
+            <h4>13%+</h4>
+            <p>Click-Through Rate</p>
+          </div>
+        </div>
+
+        <div class="cs-content-split">
+          <div class="cs-text">
+            <div class="cs-block">
+              <h4><i class="fas fa-bullseye"></i> Objective</h4>
+              <p>Drive large-scale, cost-efficient website traffic to increase brand visibility and product discovery for a clothing brand.</p>
+            </div>
+            
+            <div class="cs-block">
+              <h4><i class="fas fa-cogs"></i> Strategy & Execution</h4>
+              <ul class="cs-list">
+                <li>Used 'Maximize Clicks' bidding strategy to scale traffic volume.</li>
+                <li>Targeted broad + phrase match keywords for clothing searches.</li>
+                <li>Maintained a strict low CPC acquisition strategy.</li>
+                <li>Continuously refined keywords & actively added negative keywords.</li>
+                <li>Designed ads around offers, pricing & product variety.</li>
+                <li>Ensured landing pages were aligned for better user engagement.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Clickable Dashboard Images -->
+          <div class="cs-visuals">
+            <div class="cs-img-wrap design-item" data-img="images/rk-dashboard.jpg">
+              <img src="images/rk-dashboard.jpg" alt="Google Ads Dashboard RK Enterprise">
+              <div class="cs-img-overlay"><i class="fas fa-expand"></i> View Dashboard</div>
+            </div>
+            <div class="cs-img-wrap design-item" data-img="images/rk-report.jpg">
+              <img src="images/rk-report.jpg" alt="Campaign Report RK Enterprise">
+              <div class="cs-img-overlay"><i class="fas fa-expand"></i> View Report</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-footer">
+          <div class="cs-footer-col">
+            <h4><i class="fas fa-trophy"></i> Key Achievements</h4>
+            <p>Generated extremely high-volume traffic at a rock-bottom CPC of ₹5.6. Maintained this consistent performance over a long 10-month duration, massively improving brand visibility and reach.</p>
+          </div>
+          <div class="cs-footer-col">
+            <h4><i class="fas fa-lightbulb"></i> Optimization Insights</h4>
+            <p>The Maximize Clicks strategy worked best for this traffic-focused goal. Broad keyword targeting successfully scaled the reach, while continuous negative keyword optimization prevented the CPC from inflating.</p>
+          </div>
+        </div>
+        
+        <div class="cs-summary">
+          <strong>🏆 Result:</strong> Successfully delivered large-scale, cost-efficient traffic while maintaining strong engagement and visibility for the clothing brand.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS & EXPERIENCE SECTION -->
+<section class="skills-section" id="skills">
+  <div class="container">
+    <div class="skills-grid">
+      <div class="skills-left">
+        <div class="section-eyebrow gsap-reveal">
+          <span class="mono">Expertise</span>
+          <div class="eyebrow-line"></div>
+        </div>
+        <h2 class="section-title gsap-reveal">Technical <em>Skills</em></h2>
+        <p class="section-desc gsap-reveal" style="text-align:left;max-width:400px">
+          Continuously sharpened through real-world client projects and performance-driven roles since 2022.
+        </p>
+        <div class="skill-bars">
+          <div class="skill-bar gsap-reveal">
+            <div class="sb-top">
+              <span>Google & Meta Ads Strategy</span>
+              <span class="mono">92%</span>
+            </div>
+            <div class="sb-track"><div class="sb-fill" data-width="92"></div></div>
+          </div>
+          <div class="skill-bar gsap-reveal">
+            <div class="sb-top">
+              <span>Web Development (HTML/CSS/PHP/WP)</span>
+              <span class="mono">88%</span>
+            </div>
+            <div class="sb-track"><div class="sb-fill" data-width="88"></div></div>
+          </div>
+          <div class="skill-bar gsap-reveal">
+            <div class="sb-top">
+              <span>Graphic & UI Design (Figma/PS/Canva)</span>
+              <span class="mono">85%</span>
+            </div>
+            <div class="sb-track"><div class="sb-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-bar gsap-reveal">
+            <div class="sb-top">
+              <span>Video Editing (Premiere Pro)</span>
+              <span class="mono">80%</span>
+            </div>
+            <div class="sb-track"><div class="sb-fill" data-width="80"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-right gsap-reveal">
+        <h3 class="tools-title">Tools & Platforms</h3>
+        <div class="tools-grid">
+          <div class="tool-card"><i class="fab fa-google"></i><span>Google Ads</span></div>
+          <div class="tool-card"><i class="fab fa-meta"></i><span>Meta Ads</span></div>
+          <div class="tool-card"><i class="fab fa-wordpress"></i><span>WordPress</span></div>
+          <div class="tool-card"><i class="fab fa-html5"></i><span>HTML/CSS/PHP</span></div>
+          <div class="tool-card"><i class="fas fa-video"></i><span>Premiere Pro</span></div>
+          <div class="tool-card"><i class="fas fa-photo-film"></i><span>Photoshop</span></div>
+          <div class="tool-card"><i class="fab fa-figma"></i><span>Figma</span></div>
+          <div class="tool-card"><i class="fab fa-aws"></i><span>AWS</span></div>
+        </div>
+
+        <!-- Experience Timeline -->
+        <div class="exp-timeline">
+          <h3 class="tools-title" style="margin-bottom:28px; margin-top:30px;">Professional Journey</h3>
+          
+          <div class="exp-item">
+            <div class="exp-dot"></div>
+            <div class="exp-content">
+              <div class="exp-date mono">2.5 Years</div>
+              <div class="exp-role">Web Developer & Graphic Designer</div>
+              <div class="exp-desc">Skjobsway & Kewineddy Immigration Pvt. Ltd.</div>
+            </div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-dot"></div>
+            <div class="exp-content">
+              <div class="exp-date mono">2.5 Years</div>
+              <div class="exp-role">Graphic & Product Designer</div>
+              <div class="exp-desc">Goldberry LLC</div>
+            </div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-dot"></div>
+            <div class="exp-content">
+              <div class="exp-date mono">2 Years</div>
+              <div class="exp-role">Graphic Designer & Ads Expert</div>
+              <div class="exp-desc">AY Enterprises & RK Enterprises</div>
+            </div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-dot"></div>
+            <div class="exp-content">
+              <div class="exp-date mono">1.5 Years</div>
+              <div class="exp-role">Video Editor & Junior Ads Expert</div>
+              <div class="exp-desc">Lucifer Media Labs</div>
+            </div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-dot exp-dot--past"></div>
+            <div class="exp-content">
+              <div class="exp-date mono">Education</div>
+              <div class="exp-role">Bachelor of Computer Applications (Pursued 2 Years)</div>
+              <div class="exp-desc">12th Grade: St. Joseph Academy (2020)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS SECTION -->
+<section class="results" id="results">
+  <div class="container">
+    <div class="section-header gsap-reveal">
+      <div class="section-eyebrow">
+        <span class="mono">By The Numbers</span>
+        <div class="eyebrow-line"></div>
+      </div>
+      <h2 class="section-title">Proven <em>Results</em></h2>
+    </div>
+    <div class="results-grid">
+      <div class="result-card gsap-card">
+        <div class="rc-bg"></div>
+        <div class="rc-icon"><i class="fas fa-users"></i></div>
+        <div class="rc-number">
+          <span class="counter" data-target="30">0</span>+
+        </div>
+        <div class="rc-label">Leads Per Month</div>
+        <div class="rc-detail">Qualified leads generated via Google & Meta Ads</div>
+        <div class="rc-trend"><i class="fas fa-arrow-up"></i> Consistent Monthly</div>
+      </div>
+      <div class="result-card gsap-card">
+        <div class="rc-bg"></div>
+        <div class="rc-icon"><i class="fas fa-chart-pie"></i></div>
+        <div class="rc-number">
+          <span class="counter" data-target="8" data-decimal="true">0</span>x
+        </div>
+        <div class="rc-label">Average ROAS</div>
+        <div class="rc-detail">Return on ad spend across Google & Meta campaigns</div>
+        <div class="rc-trend"><i class="fas fa-arrow-up"></i> Industry-leading</div>
+      </div>
+      <div class="result-card gsap-card">
+        <div class="rc-bg"></div>
+        <div class="rc-icon"><i class="fas fa-globe"></i></div>
+        <div class="rc-number">
+          <span class="counter" data-target="50">0</span>+
+        </div>
+        <div class="rc-label">Projects Delivered</div>
+        <div class="rc-detail">Websites, campaigns & creative designs across industries</div>
+        <div class="rc-trend"><i class="fas fa-star"></i> Multi-industry</div>
+      </div>
+      <div class="result-card gsap-card">
+        <div class="rc-bg"></div>
+        <div class="rc-icon"><i class="fas fa-bullseye"></i></div>
+        <div class="rc-number">
+          <span class="counter" data-target="98">0</span>%
+        </div>
+        <div class="rc-label">Client Satisfaction</div>
+        <div class="rc-detail">Clients who returned for repeat projects & referrals</div>
+        <div class="rc-trend"><i class="fas fa-star"></i> Retention rate</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DESIGN SHOWCASE -->
+<section class="design" id="design">
+  <div class="container">
+    <div class="section-header gsap-reveal">
+      <div class="section-eyebrow">
+        <span class="mono">Visual Portfolio</span>
+        <div class="eyebrow-line"></div>
+      </div>
+      <h2 class="section-title">Design <em>Showcase</em></h2>
+    </div>
+    <div class="design-grid">
+      <div class="design-item gsap-reveal" data-img="https://images.unsplash.com/photo-1561070791-2526d30994b8?w=1400&q=90">
+        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b8?w=700&q=80" alt="Design 1" loading="lazy">
+        <div class="di-overlay"><div class="di-content"><span class="mono">Brand Creative</span><i class="fas fa-expand-alt"></i></div></div>
+      </div>
+      <div class="design-item gsap-reveal" data-img="https://images.unsplash.com/photo-1545665277-5937489579f2?w=1400&q=90">
+        <img src="https://images.unsplash.com/photo-1545665277-5937489579f2?w=700&q=80" alt="Design 2" loading="lazy">
+        <div class="di-overlay"><div class="di-content"><span class="mono">Social Media Ad</span><i class="fas fa-expand-alt"></i></div></div>
+      </div>
+      <div class="design-item gsap-reveal" data-img="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=1400&q=90">
+        <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=700&q=80" alt="Design 3" loading="lazy">
+        <div class="di-overlay"><div class="di-content"><span class="mono">Ad Banner</span><i class="fas fa-expand-alt"></i></div></div>
+      </div>
+      <div class="design-item gsap-reveal" data-img="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=1400&q=90">
+        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=700&q=80" alt="Design 4" loading="lazy">
+        <div class="di-overlay"><div class="di-content"><span class="mono">Promotional Poster</span><i class="fas fa-expand-alt"></i></div></div>
+      </div>
+      <div class="design-item gsap-reveal" data-img="https://images.unsplash.com/photo-1634942537034-2531766767d1?w=1400&q=90">
+        <img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?w=700&q=80" alt="Design 5" loading="lazy">
+        <div class="di-overlay"><div class="di-content"><span class="mono">Campaign Creative</span><i class="fas fa-expand-alt"></i></div></div>
+      </div>
+      <div class="design-item gsap-reveal" data-img="https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=1400&q=90">
+        <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=700&q=80" alt="Design 6" loading="lazy">
+        <div class="di-overlay"><div class="di-content"><span class="mono">Social Creative</span><i class="fas fa-expand-alt"></i></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGE LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close"><i class="fas fa-times"></i></button>
+  <img id="lightboxImg" src="" alt="Design preview">
+</div>
+
+<!-- SERVICE EXPLORATION MODAL -->
+<div class="service-modal" id="serviceModal" role="dialog" aria-modal="true">
+  <div class="service-modal-content">
+    <button class="service-modal-close" id="serviceModalClose" aria-label="Close"><i class="fas fa-times"></i></button>
+    <div class="sm-header">
+      <div class="sm-icon" id="smIcon"></div>
+      <h3 id="smTitle">Service Title</h3>
+    </div>
+    <p class="sm-desc" id="smDesc">Service Description</p>
+    <div class="sm-grid">
+      <div class="sm-col">
+        <h4>My Process</h4>
+        <ul id="smProcess" class="sc-list"></ul>
+      </div>
+      <div class="sm-col">
+        <h4>What You Get</h4>
+        <ul id="smDeliverables" class="sc-list"></ul>
+      </div>
+    </div>
+    <a href="#contact" class="btn btn-primary sm-cta" onclick="document.getElementById('serviceModal').classList.remove('active'); document.body.style.overflow = '';">
+      <span>Get a Custom Strategy</span>
+      <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-header gsap-reveal">
+      <div class="section-eyebrow">
+        <span class="mono">Client Stories</span>
+        <div class="eyebrow-line"></div>
+      </div>
+      <h2 class="section-title">What Clients <em>Say</em></h2>
+    </div>
+    <div class="testimonial-wrapper gsap-reveal">
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-card">
+          <div class="tc-quote"><i class="fas fa-quote-left"></i></div>
+          <div class="tc-stars">★★★★★</div>
+          <p>"Working with Ayush transformed our business. Our website conversions increased significantly in just 3 months. Absolutely premium quality work!"</p>
+          <div class="tc-client">
+            <img src="https://i.pravatar.cc/100?img=1" alt="Sarah Mitchell">
+            <div class="tc-info"><h4>Rahul Sharma</h4><span>Owner, Electronics Shop</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="tc-quote"><i class="fas fa-quote-left"></i></div>
+          <div class="tc-stars">★★★★★</div>
+          <p>"The ad campaigns delivered an 8x ROAS. The attention to detail and strategic thinking in both the ads and the creative design is unmatched."</p>
+          <div class="tc-client">
+            <img src="https://i.pravatar.cc/100?img=12" alt="James Anderson">
+            <div class="tc-info"><h4>Priya Mehta</h4><span>Founder, Service Business</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="tc-quote"><i class="fas fa-quote-left"></i></div>
+          <div class="tc-stars">★★★★★</div>
+          <p>"Best investment we've made. Professional, fast, and the results speak for themselves. Highly recommend to anyone serious about growing online."</p>
+          <div class="tc-client">
+            <img src="https://i.pravatar.cc/100?img=5" alt="Emma Roberts">
+            <div class="tc-info"><h4>Vikram Singh</h4><span>Marketing Director</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button id="prevBtn" aria-label="Previous testimonial"><i class="fas fa-arrow-left"></i></button>
+        <div class="slider-dots" id="sliderDots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+        <button id="nextBtn" aria-label="Next testimonial"><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-inner gsap-reveal">
+      <div class="cta-orb"></div>
+      <div class="cta-text-group">
+        <span class="mono" style="color:var(--gold);font-size:13px;letter-spacing:2px;text-transform:uppercase">Ready to grow?</span>
+        <h2>Let's Build Something <em>Extraordinary</em> Together</h2>
+        <p>Whether you need more leads, a better website, or a standout ad campaign — I've got you covered.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="https://wa.me/919899931051" class="btn btn-primary magnetic" target="_blank">
+          <i class="fab fa-whatsapp"></i><span>WhatsApp Me Now</span>
+        </a>
+        <a href="mailto:aj1004890@gmail.com" class="btn btn-ghost magnetic">
+          <i class="fas fa-envelope"></i><span>Send an Email</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-wrapper">
+      <div class="contact-info gsap-reveal">
+        <div class="section-eyebrow">
+          <span class="mono">Get In Touch</span>
+          <div class="eyebrow-line"></div>
+        </div>
+        <h2 class="section-title">Let's Grow Your <em>Business</em></h2>
+        <p class="contact-desc">Have a project in mind? Let's talk about how I can help you achieve your digital marketing and web design goals.</p>
+        <div class="contact-methods">
+          <a href="https://wa.me/919899931051" class="contact-card whatsapp" target="_blank">
+            <div class="cc-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="cc-content"><span>WhatsApp</span><strong>+91 98999 31051</strong></div>
+            <i class="fas fa-external-link-alt cc-ext"></i>
+          </a>
+          <a href="mailto:aj1004890@gmail.com" class="contact-card email">
+            <div class="cc-icon"><i class="fas fa-envelope"></i></div>
+            <div class="cc-content"><span>Email</span><strong>aj1004890@gmail.com</strong></div>
+            <i class="fas fa-external-link-alt cc-ext"></i>
+          </a>
+          <div class="contact-card location">
+            <div class="cc-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="cc-content"><span>Location</span><strong>Ghaziabad, UP, India</strong></div>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form gsap-reveal" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" id="name" required autocomplete="name">
+            <label for="name">Your Name</label><div class="form-focus-line"></div>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" required autocomplete="email">
+            <label for="email">Your Email</label><div class="form-focus-line"></div>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" id="subject" required>
+          <label for="subject">Project Type (Ads / Website / Video / Design)</label><div class="form-focus-line"></div>
+        </div>
+        <div class="form-group">
+          <textarea id="message" rows="5" required></textarea>
+          <label for="message">Tell Me About Your Project</label><div class="form-focus-line"></div>
+        </div>
+        <button type="submit" class="btn btn-primary magnetic" style="width:100%;justify-content:center">
+          <span>Send Message</span><i class="fas fa-paper-plane"></i>
+        </button>
+        <p class="form-privacy"><i class="fas fa-lock"></i> Your information is 100% confidential</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#hero" class="logo">AJ<span class="logo-dot">.</span></a>
+        <p>Digital Marketing, Video & Web Design specialist helping businesses grow online through data-driven strategies and premium creative work.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://wa.me/919899931051" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+        </div>
+      </div>
+      <div class="footer-links-group">
+        <h4>Navigation</h4>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-links-group">
+        <h4>Services</h4>
+        <a href="#services">Google/Meta Ads</a>
+        <a href="#services">Web Development</a>
+        <a href="#services">Video Editing</a>
+        <a href="#services">UI/UX Design</a>
+        <a href="#services">Landing Pages</a>
+      </div>
+      <div class="footer-links-group">
+        <h4>Contact</h4>
+        <a href="tel:+919899931051">+91 98999 31051</a>
+        <a href="mailto:aj1004890@gmail.com">aj1004890@gmail.com</a>
+        <a href="#">Ghaziabad, UP, India</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Ayush Jha. All rights reserved.</p>
+      <p class="footer-credit">Crafted with <span style="color:var(--gold)">✦</span> &amp; precision</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
