@@ -354,7 +354,77 @@ function initAll() {
     serviceModal.addEventListener('click', e => { if (e.target === serviceModal) closeSModal(); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && serviceModal.classList.contains('active')) closeSModal(); });
   }
+// ============ PROJECT TAB SWITCH WITH SMOOTH ANIMATION ============
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    // Remove active from all buttons
+    document.querySelectorAll('.tab-btn').forEach(b => {
+      b.classList.remove('active');
+    });
+    
+    // Add active to clicked button with animation
+    this.classList.add('active');
+    
+    // Get the tab id
+    const tab = this.dataset.tab;
+    
+    // Remove active from all panes
+    document.querySelectorAll('.tab-pane').forEach(p => {
+      p.classList.remove('active');
+    });
+    
+    // Add active to corresponding pane
+    const activePane = document.getElementById(tab);
+    if (activePane) {
+      activePane.classList.add('active');
+      
+      // Add staggered animation to company cards
+      const cards = activePane.querySelectorAll('.company-card');
+      cards.forEach((card, index) => {
+        card.style.animationDelay = (index * 0.05) + 's';
+      });
+    }
+  });
+});
 
+// ============ COMPANY CARD CLICK INTERACTION ============
+document.querySelectorAll('.company-card').forEach(card => {
+  card.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    // Get company name
+    const companyName = this.querySelector('h4')?.textContent || 'Project Files';
+    
+    // Show notification (or you can open a modal/download files)
+    showCompanyDetails(companyName);
+  });
+  
+  // Add hover sound/effect
+  card.addEventListener('mouseenter', function() {
+    this.style.borderColor = 'var(--gold-light)';
+  });
+  
+  card.addEventListener('mouseleave', function() {
+    this.style.borderColor = 'var(--glass-border)';
+  });
+});
+
+// Function to show company details
+function showCompanyDetails(companyName) {
+  // You can customize this to:
+  // 1. Open a modal with project files
+  // 2. Download files
+  // 3. Show a notification
+  // 4. Navigate to a detail page
+  
+  // Example: Show alert (replace with your custom logic)
+  console.log('Clicked on: ' + companyName);
+  
+  // Optional: You can add a custom toast/notification here
+  // For now, just provide feedback to user
+}
   // CONTACT FORM
   const form = document.getElementById('contactForm');
   if (form) {
